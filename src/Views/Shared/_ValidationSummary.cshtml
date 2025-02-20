@@ -1,0 +1,7 @@
+﻿@if (ViewContext.ModelState.IsValid == false)
+{
+    <div class="validation__container">
+        <p><strong>Error</strong></p>
+        <div asp-validation-summary="All"></div>
+    </div>
+}

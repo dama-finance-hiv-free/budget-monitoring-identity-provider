@@ -1,0 +1,20 @@
+﻿@model IdentityProvider.Quickstart.Account.LogoutViewModel
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-container">
+            <div class="form__header" style="margin-top: 10rem;">
+                <h1>Logout</h1>
+                <p class="form__text">
+                    Would you like to logout?
+                </p>
+                <form asp-action="Logout">
+                    <input type="hidden" name="logoutId" value="@Model.LogoutId" />
+                    <button class="form__button" name="button" value="logout">
+                        Yes
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

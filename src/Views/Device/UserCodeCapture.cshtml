@@ -1,0 +1,32 @@
+@model string
+
+<div class="row">
+    <div class="col-col-md-6 mx-md-auto">
+        <div class="form-container">
+            <div class="form__header" style="margin-top: 10rem">
+                <h1>User Code</h1>
+                <p class="form__text">
+                    Please enter the code displayed on your device.
+                </p>
+            </div>
+
+            <partial name="_ValidationSummary" />
+
+            <form class="form">
+                <div class="form__group form__group_small"
+                     form
+                     asp-action="UserCodeCapture">
+                    <input class="form__input"
+                           for="userCode"
+                           name="userCode"
+                           autofocus
+                           style="border-color: none"
+                           placeholder="Enter Code" />
+                </div>
+                <button class="form__button" name="button" value="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
