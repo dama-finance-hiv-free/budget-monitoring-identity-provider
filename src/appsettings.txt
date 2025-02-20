@@ -1,0 +1,23 @@
+{
+  "ConnectionStrings": {
+    "IdentityData": "User ID=postgres;Password=skyhark;Server=localhost;Port=5432;Database=identity;Integrated Security=true;Pooling=true;"
+  },
+  "AppSettings": {
+    "AuthorizationServer": "https://localhost:5000/",
+    "AllowedOrigins": "https://localhost:5000/,http://localhost:3000/"
+  },
+  "IdentitySettings": {
+    "PasswordRequiredLength": "8",
+    "PasswordRequireNonAlphanumeric": "true",
+    "PasswordRequireDigit": "true",
+    "PasswordRequireUppercase": "true",
+    "PasswordRequireLowercase": "true",
+    "SignInRequireConfirmedEmail": "false",
+    "SignInRequireConfirmedPhoneNumber": "false",
+    "UserRequireUniqueEmail": "true"
+  },
+  "SigninKeyCredentials": {
+    "KeyFilePath": "c:\\keys\\wildcard.dama.pfx",
+    "KeyFilePassword": "123456"
+  }
+}

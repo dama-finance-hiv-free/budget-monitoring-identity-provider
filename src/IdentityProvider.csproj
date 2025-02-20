@@ -31,4 +31,8 @@
     <PackageReference Include="UAParser" Version="3.1.47" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\keys\wildcard.dama.pfx" />
+  </ItemGroup>
+
 </Project>
